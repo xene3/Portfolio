@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+}
+
+h1::selection, h2::selection, p::selection{
+  background-color: #9ec4bb;
+  color: #414240;
+}
+
+button, a, br, form, iframe{
+  user-select: none;
+}
+
+body{
+  background-color: #2d2e2c;
+}
+nav{
+  position: sticky;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background-color: #2d2e2c;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  list-style-type: none;
+}
+
+nav li{
+  float: right;
+}
+
+li a, li p{
+  display: block;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  color: #f7dece;
+  transition: background-color .25s;
+}
+
+li p{
+  /* font-family: 'Cardo', serif; */
+}
+
+li a:hover{
+  background-color: #53576b;
+}
+
+.active{
+  background-color: #9ec4bb;
+}
+
+@media screen and (max-width: 600px){
+
+  
+}
