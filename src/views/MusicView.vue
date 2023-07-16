@@ -45,7 +45,7 @@
           <source src="cliche.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
-        <h6>In this song I wanted to do a little 'Lo-fi' piece that could match as an ambience music.</h6>
+        <h6>In this song I wanted to do a little 'Lo-fi' piece that could match as an ambiance music.</h6>
       </div>
     </div>
 
