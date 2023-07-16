@@ -32,20 +32,16 @@
       <h1>Video Games</h1>
       <div>
         <p>Andante Encoraggiante</p>
-        <audio controls controlslist="nodownload">
-          <source src="AndanteEncoraggiante.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+        <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" 
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1566301147&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
         <h6>In this little 8/8 piece I developed a short motif 
           that could evolve into a bigger piece in the future.</h6>
       </div>
       <div>
         <p>Cliché</p>
-        <audio controls controlslist="nodownload">
-          <source src="cliche.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-        <h6>In this song I wanted to do a little 'Lo-fi' piece that could match as an ambiance music.</h6>
+        <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" 
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1566301144&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h6>In this song I wanted to do a little 'Lo-fi' piece that could match as an ambience music.</h6>
       </div>
     </div>
 
