@@ -33,7 +33,7 @@
       <div>
         <p>Andante Encoraggiante</p>
         <audio controls controlslist="nodownload">
-          <source src="AndanteEncoraggiante.mp3" type="audio/mpeg">
+          <source src="./AndanteEncoraggiante.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
         <h6>In this little 8/8 piece I developed a short motif 
@@ -42,7 +42,7 @@
       <div>
         <p>Cliché</p>
         <audio controls controlslist="nodownload">
-          <source src="cliche.mp3" type="audio/mpeg">
+          <source src="./cliche.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
         <h6>In this song I wanted to do a little 'Lo-fi' piece that could match as an ambiance music.</h6>
