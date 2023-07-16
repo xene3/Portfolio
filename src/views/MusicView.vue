@@ -30,14 +30,33 @@
 
     <div class="musicBlock" id="games">
       <h1>Video Games</h1>
+      <div>
+        <p>Andante Encoraggiante</p>
+        <audio controls controlslist="nodownload">
+          <source src="AndanteEncoraggiante.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <h6>In this little 8/8 piece I developed a short motif 
+          that could evolve into a bigger piece in the future.</h6>
+      </div>
+      <div>
+        <p>Cliché</p>
+        <audio controls controlslist="nodownload">
+          <source src="cliche.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <h6>In this song I wanted to do a little 'Lo-fi' piece that could match as an ambience music.</h6>
+      </div>
     </div>
 
     <div class="musicBlock" id="soundtrack">
       <h1>Soundtrack</h1>
+      <P>Empty for now</P>
     </div>
 
     <div class="musicBlock" id="lofi">
       <h1>Lo-fi</h1>
+      <P>Empty for now</P>
     </div>
   </body>
 
@@ -89,12 +108,31 @@ body{
 .musicBlock iframe{
   border-radius: 20px;
 }
+
+.musicBlock audio{
+  margin-top: 10px;
+  width: 100%;
+}
 .musicBlock h1{
   grid-column: 1 / 3;
 }
 
 .musicBlock div p{
   font-size: .75em;
+}
+
+.musicBlock div h6{
+  font-weight: 400;
+  font-size: 0.5em;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+  .musicBlock{
+    font-size: 1.75em;
+  }
+
 }
 
 @media screen and (max-width: 600px){
@@ -109,11 +147,15 @@ body{
 }
 
 .musicBlock{
-  margin: 15em 5vw;
+  margin: 5vw 5vw;
   font-size: 1.5em;
   grid-template-columns: 1fr;
   column-gap: 0;
   row-gap: 4vw;
+}
+
+#classic{
+  margin-top: 10vh;
 }
 
 .musicBlock div{
