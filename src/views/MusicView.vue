@@ -16,20 +16,13 @@
       </h2>
     </div>
 
-    <div class="musicBlock" id="classic">
-      <h1>Classic</h1>
-      <div>
-        <p>Chaos From The Spring</p>
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/3SPFzIRX_Ng" title="Chaos From The Spring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div>
-        <p>The Winter Arrived</p>
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/oJ04vc_eets" title="The Winter Arrived" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </div>
-
     <div class="musicBlock" id="games">
       <h1>Video Games</h1>
+      <div>
+        <p>Forest Song</p>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/XgYrJPETNW8" title="Forest Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h6>Little fantasy piece for any 'medieval-style' video game.</h6>
+      </div>
       <div>
         <p>Andante Encoraggiante</p>
         <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" 
@@ -45,14 +38,16 @@
       </div>
     </div>
 
-    <div class="musicBlock" id="soundtrack">
-      <h1>Soundtrack</h1>
-      <P>Empty for now</P>
-    </div>
-
-    <div class="musicBlock" id="lofi">
-      <h1>Lo-fi</h1>
-      <P>Empty for now</P>
+    <div class="musicBlock" id="classic">
+      <h1>Classic | Academic Works</h1>
+      <div>
+        <p>Chaos From The Spring</p>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/3SPFzIRX_Ng" title="Chaos From The Spring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div>
+        <p>The Winter Arrived</p>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/oJ04vc_eets" title="The Winter Arrived" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     </div>
   </body>
 
