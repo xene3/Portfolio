@@ -76,14 +76,6 @@ body{
   color: #f7dece;
 }
 
-.burger{
-    display: block;
-    text-align: center;
-    padding: 1em;
-    color: #f7dece;
-    transition: background-color .25s;
-  }
-
   .menuBurger{
     display: flex;
     justify-content: start;
