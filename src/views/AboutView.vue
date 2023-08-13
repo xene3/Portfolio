@@ -18,7 +18,7 @@
                 As you visit my website, I invite you to explore my portfolio of music compositions. 
                 You will find my work, both in professional recordings and sheet music. 
                 Each composition represents my unique style and my ability to tell stories through music. Hope you enjoy them. <br>
-                If you want to start working, please email me at <a href="mailto:someone@yoursite.com?subject=Mail from Our Site">joelraviemusic@gmail.com</a>  
+                If you want to start working, please email me at <a href="mailto:joelraviemusic@gmail.com?subject=I want to work with you">joelraviemusic@gmail.com</a>  
             </p>
         </div>
     </body>
