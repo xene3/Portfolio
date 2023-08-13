@@ -5,18 +5,28 @@
   <header>
     <nav>
       <li style="float: left;"><p style="user-select: none;">Joel Ravié</p></li>
-      <li><RouterLink to="/about">About</RouterLink></li>
+      <li class="big"><RouterLink to="/about">About</RouterLink></li>
       <!-- <li><RouterLink to="/contact">Contact</RouterLink></li> -->
-      <li><RouterLink to="/music">Music</RouterLink></li>
-      <li class="active"><RouterLink to="/">Home</RouterLink></li>
+      <li class="big"><RouterLink to="/music">Music</RouterLink></li>
+      <li class="active big"><RouterLink to="/">Home</RouterLink></li>
+      <li class="burger" @click="menuBurger"><font-awesome-icon icon="fa-solid fa-bars" /></li>
     </nav>
   </header>
-  <body>
+  
+  <body v-if="hiddenMenu">
+
     <div class="introduction">
       <h1>Hello, I'm Joel</h1>
       <h2>a passionate Argentine composer and music producer dedicated to create unique and captivating sonic landscapes.</h2>
     </div>
     <button class="aboutBtn"><RouterLink to="/about">About Me</RouterLink></button> 
+  </body>
+
+  <body class="menuBurger" v-else>
+    <RouterLink to="/" @click="close">Home</RouterLink>
+    <RouterLink to="/music" @click="close">Music</RouterLink>
+    <RouterLink to="/about" @click="close">About</RouterLink>
+    <font-awesome-icon icon="fa-solid fa-x" class="x" @click="close"/>
   </body>
 
 
@@ -83,6 +93,10 @@ body{
   body{
     top: 10em;
   }
+
+  .menuBurger{
+    top: 5em;
+  }
   .introduction h1{
     font-size: 2.5em;
   }
@@ -96,3 +110,16 @@ body{
   }
 }
 </style>
+
+<script setup>
+import {ref} from "vue";
+
+const hiddenMenu = ref(true);
+const menuBurger =() =>{
+  hiddenMenu.value = false;
+}
+
+const close =() =>{
+  hiddenMenu.value = true;
+}
+</script>

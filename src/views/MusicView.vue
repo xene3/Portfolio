@@ -2,13 +2,14 @@
   <header>
     <nav>
       <li style="float: left;"><p style="user-select: none;">Joel Ravié</p></li>
-      <li><RouterLink to="/about">About</RouterLink></li>
+      <li class="big"><RouterLink to="/about">About</RouterLink></li>
       <!-- <li><RouterLink to="/contact">Contact</RouterLink></li> -->
-      <li class="active"><RouterLink to="/music">Music</RouterLink></li>
-      <li><RouterLink to="/">Home</RouterLink></li>
+      <li class="active big"><RouterLink to="/music">Music</RouterLink></li>
+      <li class="big"><RouterLink to="/">Home</RouterLink></li>
+      <li class="burger" @click="menuBurger"><font-awesome-icon icon="fa-solid fa-bars" /></li>
     </nav>
   </header>
-  <body>
+  <body v-if="hiddenMenu">
 
     <div class="music">
       <h1>Welcome to my world!</h1>
@@ -56,6 +57,12 @@
     </div>
   </body>
 
+  <body class="menuBurger" v-else>
+    <RouterLink to="/" @click="close">Home</RouterLink>
+    <RouterLink to="/music" @click="close">Music</RouterLink>
+    <RouterLink to="/about" @click="close">About</RouterLink>
+    <font-awesome-icon icon="fa-solid fa-x" class="x" @click="close"/>
+  </body>
 </template>
   
 <style scoped>
@@ -68,6 +75,39 @@ body{
   font-family: 'Poppins', sans-serif;
   color: #f7dece;
 }
+
+.burger{
+    display: block;
+    text-align: center;
+    padding: 1em;
+    color: #f7dece;
+    transition: background-color .25s;
+  }
+
+  .menuBurger{
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+    height: 80vh;
+  }
+  .menuBurger a, .menuBurger .x{
+    align-self: center;
+    text-decoration: none;
+    color: #f7dece;
+    padding: 5vh;
+    transition: color .25s;
+    font-size: x-large;
+  }
+
+  .menuBurger a:hover, .menuBurger .x:hover{
+    color: #9ec4bb;
+    cursor: pointer;
+  }
+
+  .menuBurger .x{
+    position: relative;
+    top: 30%;
+  }
 
 .music{
   display: flex;
@@ -164,3 +204,16 @@ body{
 
 }
 </style>
+
+<script setup>
+import {ref} from "vue";
+
+const hiddenMenu = ref(true);
+const menuBurger =() =>{
+  hiddenMenu.value = false;
+}
+
+const close =() =>{
+  hiddenMenu.value = true;
+}
+</script>

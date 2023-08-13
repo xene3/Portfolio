@@ -4,13 +4,14 @@
     <header>
       <nav>
         <li style="float: left;"><p style="user-select: none;">Joel Ravié</p></li>
-        <li class="active"><RouterLink to="/about">About</RouterLink></li>
-        <!-- <li><RouterLink to="/contact">Contact</RouterLink></li> -->
-        <li><RouterLink to="/music">Music</RouterLink></li>
-        <li><RouterLink to="/">Home</RouterLink></li>
+      <li class="active big"><RouterLink to="/about">About</RouterLink></li>
+      <!-- <li><RouterLink to="/contact">Contact</RouterLink></li> -->
+      <li class="big"><RouterLink to="/music">Music</RouterLink></li>
+      <li class="big"><RouterLink to="/">Home</RouterLink></li>
+      <li class="burger" @click="menuBurger"><font-awesome-icon icon="fa-solid fa-bars" /></li>
       </nav>
     </header>
-    <body>
+    <body v-if="hiddenMenu">
         <div class="about">
             <h1>Freelance music composer</h1>
             <p>I'm from Buenos Aires, Argentina. As a composer, I've worked with many genres such as: Classic, Lo-fi and Experimental. 
@@ -20,6 +21,13 @@
                 If you want to start working, please email me at <a href="mailto:someone@yoursite.com?subject=Mail from Our Site">joelraviemusic@gmail.com</a>  
             </p>
         </div>
+    </body>
+
+    <body class="menuBurger" v-else>
+    <RouterLink to="/" @click="close">Home</RouterLink>
+    <RouterLink to="/music" @click="close">Music</RouterLink>
+    <RouterLink to="/about" @click="close">About</RouterLink>
+    <font-awesome-icon icon="fa-solid fa-x" class="x" @click="close"/>
     </body>
 
 </template>
@@ -88,3 +96,16 @@ body{
 }
 }
 </style>
+
+<script setup>
+import {ref} from "vue";
+
+const hiddenMenu = ref(true);
+const menuBurger =() =>{
+  hiddenMenu.value = false;
+}
+
+const close =() =>{
+  hiddenMenu.value = true;
+}
+</script>
