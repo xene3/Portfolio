@@ -53,7 +53,51 @@ li a:hover{
   background-color: #9ec4bb;
 }
 
+.burger{
+  display: none;
+}
+
+.hidden{
+  display: none;
+}
+
 @media screen and (max-width: 600px){
 
+  .big{
+    display: none;
+  }
   
+  .burger{
+    display: block;
+    text-align: center;
+    padding: 1em;
+    color: #f7dece;
+    cursor: pointer;
+    transition: background-color .25s;
+  }
+
+  .menuBurger{
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+    height: 80vh;
+  }
+  .menuBurger a, .menuBurger .x{
+    align-self: center;
+    text-decoration: none;
+    color: #f7dece;
+    padding: 5vh;
+    transition: color .25s;
+    font-size: x-large;
+  }
+
+  .menuBurger a:hover, .menuBurger .x:hover{
+    color: #9ec4bb;
+    cursor: pointer;
+  }
+
+  .menuBurger .x{
+    position: relative;
+    top: 30%;
+  }
 }
