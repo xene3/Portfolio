@@ -20,6 +20,11 @@
     <div class="musicBlock" id="games">
       <h1>Video Games</h1>
       <div>
+        <p>Tense Theme</p>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/L7jlGBxpdi0" title="Tense Theme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h6>Tense moment music that could be use for any dangerous moment in a video game.</h6>
+      </div>
+      <div>
         <p>Forest Song</p>
         <iframe width="100%" height="500" src="https://www.youtube.com/embed/XgYrJPETNW8" title="Forest Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <h6>Little fantasy piece for any 'medieval-style' video game.</h6>
